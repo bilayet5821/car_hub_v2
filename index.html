@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cur Hub</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        /* CSS for Dropdown */
+        .navbar {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li {
+            position: relative;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .navbar li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color:#d8cfcf;
+            box-shadow: 0 10px 16px rgba(1,0,0,0.1);
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        .dropdown li {
+            padding: 8px 16px;
+        }
+
+        .dropdown li a {
+            color: #333;
+        }
+
+        .dropdown li a:hover {
+            color: #ff0000;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- Nav Container -->
+        <div class="nav container">
+            <!-- Menu Icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- Logo -->
+            <a href="#" class="logo">Car<span>Hub</span></a>
+            <!-- Navbar List -->
+            <ul class="navbar">
+                <li> <a href="#home" class="active">Home</a></li>
+                <li>
+                    <a href="#cars"> Cars</a>
+                    <!-- Dropdown Menu for Cars -->
+                    <ul class="dropdown">
+                        <li><a href="#cars">Toyota</a></li>
+                        <li><a href="#cars">Honda</a></li>
+                        <li><a href="#cars">Nissan</a></li>
+                        <li><a href="#cars">Hyundai</a></li>
+                        <li><a href="#cars">Mitsubishi</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#about">About</a></li>
+                <li> <a href="#parts">Parts</a></li>
+                <li> <a href="#blog">Our Blog</a></li>
+                <li> <a href="signin.html">Login/Signup</a></li>
+            </ul>
+            <!-- Search Icon -->
+            <i class='bx bx-search' id="search-icon"></i>
+            <!-- Search Box -->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="Search by Brand, Model or Keyword ">
+            </div>
+        </div>
+    </header>
+    <!--Home section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Find Your Road Companion <br> Let's Search Your <span>Car</span></h1>
+            <p>Embark on a Journey of Discovery <br>Unlock Your Drive and Discover Your Drive Style"</p>
+            <!--home Button-->
+            <a href="#" class="btn">Discover Now</a>
+        </div>
+
+    </section>
+    <!--cars section-->
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span> Get Your Car</span>
+            <h2>Let's Accelerate Your Car Search</h2>
+            <p>We have compiled recommended information<br>that you want to know to buy your car</p>
+        </div>
+        <!--Cars container-->
+        <div class="cars-container container">
+            <!--Box 1-->
+            <div class="box">
+                <img src="/img/lamborghini.png" alt="">
+                <h2>Lamborghini</h2>
+            </div>
+            <!--Box 2-->
+            <div class="box">
+                <img src="/img/honda.png" alt="">
+                <h2>Honda</h2>
+            </div>
+
+               <!--Box 7-->
+        <div class="box">
+            <img src="/img/mitsubishi.png" alt="">
+            <h2>Mitsubishi</h2>
+        </div>
+
+            <!--Box 3-->
+            <div class="box">
+                <img src="/img/mercedes.png" alt="">
+                <h2>Mercedes</h2>
+            </div>
+
+            <!--Box 4-->
+            <div class="box">
+                <img src="/img/toyota.png" salt="">
+                <h2> <a href="cardetails.html" > Toyota </a></h2>
+            </div>
+
+            <!--Box 5-->
+            <div class="box">
+                <img src="/img/land_rover.png" alt="">
+                <h2>Land Rover</h2>
+            </div>
+
+            <!--Box 6-->
+            <div class="box">
+                <img src="/img/jeep.png" alt="">
+                <h2>Jeep</h2>
+            </div>
+
+            <!--Box 7-->
+            <div class="box">
+                <img src="/img/hyundai.png" alt="">
+                <h2>Hyundai</h2>
+            </div>
+
+            <!--Box 8-->
+            <div class="box">
+                <img src="/img/nissan.png" alt="">
+                <h2>Nissan</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <!--About-->
+    <section>
+        <section class="about container" id="about">
+            <div class="about-img">
+                <img src="/img/about.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>About Us</span>
+                <h2>Cheap Prices With <br> Quality Cars</h2>
+                <p>Welcome to CarHub, your premier destination for high-quality, reliable, and affordable vehicles. We are dedicated to providing our customers with an exceptional car buying experience, built on trust, transparency, and a passion for automobiles.</p>
+                <!--About Button-->
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </section>
+    </section>
+    <!--parts section-->
+    <section class="parts" id="parts">
+        <div class="heading">
+            <span>What We Offer</span>
+            <h2>Our car Parts is Always Excellent</h2>
+            <p>Welcome to CarHub, your trusted online destination for high-quality car parts and accessories.</p>
+        </div>
+        <!--parts container-->
+        <div class="parts-container container">
+            <!--Box 1-->
+
+            <div class="box">
+                <img src="/img/part1.png" alt="">
+                <h3>V8 Engine</h3>
+                <span>$500</span>
+                <i class='bx bxs-star'>(6 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 2-->
+
+               <div class="box">
+                <img src="/img/part2.png" alt="">
+                <h3> Crankshaft</h3>
+                <span>$130.99</span>
+                <i class='bx bxs-star'>(3 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 3-->
+
+               <div class="box">
+                <img src="/img/part3.png" alt="">
+                <h3>Auto Spare Parts</h3>
+                <span>$200</span>
+                <i class='bx bxs-star'>(10 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 4-->
+
+               <div class="box">
+                <img src="/img/part4.png" alt="">
+                <h3>Oil Filters Cartridges</h3>
+                <span>$10</span>
+                <i class='bx bxs-star'>(7 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 5-->
+
+               <div class="box">
+                <img src="/img/part5.png" alt="">
+                <h3>Alternators</h3>
+                <span>$300</span>
+                <i class='bx bxs-star'>(9 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+
+               <!--Box 6-->
+
+               <div class="box">
+                <img src="/img/part6.png" alt="">
+                <h3>Eagle RS-A®</h3>
+                <span>$110</span>
+                <i class='bx bxs-star'>(5 Reviews)</i>
+                <a href="#" class="btn">Buy Now</a>
+                <a href="#" class="details">View Details</a>
+            </div>
+        </div>
+    </section>
+    <!--Blog Container-->
+    <section class="blog" id="blog">
+        <div class="heading">
+            <span>Blog & News</span>
+            <h2>Our Blog Content</h2>
+            <p>In today's digital age, purchasing a car online has become more convenient and accessible than ever before.</p>
+        </div>
+        <!--Blog Container-->
+        <div class="blog-container container">
+            <!--Box 1-->
+            <div class="box">
+                <img src="/img/car1.jpg" alt="">
+                <span>January 1 2024</span>
+                <h3>How to Choose the Perfect Family Car</h3>
+                <p>When it comes to finding the perfect family car, there are many factors to consider, from safety features to interior space and fuel efficiency... </p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i> </a>
+            </div>
+
+             <!--Box 2-->
+             <div class="box">
+                <img src="/img/car8.jpg" alt="">
+                <span>March 21 2024</span>
+                <h3>The Future of Autonomous Vehicles</h3>
+                <p>Autonomous vehicles are no longer a thing of the future – they are becoming a reality on our roads today...</p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i> </a>
+            </div>
+
+             <!--Box 3-->
+             <div class="box">
+                <img src="/img/car3.jpg" alt="">
+                <span> May 5 2024</span>
+                <h3>The Best website for Car Buyers</h3>
+                <p>Selling your car online can be a straightforward and profitable process if you know the right steps to take. We'll guide you through the process of preparing your car for sale, setting a competitive price....</p>
+                <a href="#" class="blog-btn">Read More<i class='bx bx-right-arrow-alt'></i> </a>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Car<span>Hub</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home</a>
+                <a href="#">Cars</a>
+                <a href="#">Parts</a>
+                <a href="#">Sales</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookies Policy</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+               <p>Khulna</p>
+               <p>Rajshahi</p>
+               <p>Kushtia</p>
+               <p>Chattogram</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Copyright-->
+    <div class="copyright">
+        <p>&#169; Bilayet & AL-Razi All Right Reserved</p>
+    </div>
+
+    <!--Link To JS-->
+    <script src="main.js"></script>
+    
+</body>
+</html>
